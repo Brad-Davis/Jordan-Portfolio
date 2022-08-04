@@ -2,6 +2,7 @@ import React from "react"
 // import '../pages/index.css'
 import Navbar from "./navbar.js"
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import ContactBar from "./contactBar.js";
 
 function NewlineText(props) {
     const text = props.text;
@@ -15,7 +16,8 @@ const fullBackground = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "black"
+    backgroundColor: "black",
+    justifyContent: "space-around"
 
 }
 
@@ -28,18 +30,26 @@ const pageStyles = {
 
 class Home extends React.Component {
     render() {
-        return <div style={fullBackground}>
+        return <div style={{height: "100vh"}}>
+            <div style={fullBackground}>
 
-            <h1 className="introText">
-                Hi I'm Jordan
-            </h1>
-            <img></img>
-            <button href="javascript:void(0);" onClick={() => scrollTo("#work")} className="btn callToAction">
-                See My Work <i class="arrow right"></i>
-            </button>
+                <div>
+                    <h1 className="introText">
+                        Hi I'm Jordan
+                    </h1>
+                    <ContactBar />
+                </div>
+                
+                
+                <button href="javascript:void(0);" onClick={() => scrollTo("#work")} className="btn callToAction">
+                    See My Work <i className="arrow right"></i>
+                </button>
 
 
+                
+            </div>
             <Navbar />
+            <img></img>
         </div>
     }
 

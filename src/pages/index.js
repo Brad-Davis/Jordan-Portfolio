@@ -1,6 +1,7 @@
 import * as React from "react"
 import "./style.css"
 import Home from '../components/home';
+import Gallery from "../components/gallery";
 
 // styles
 const pageStyles = {
@@ -130,7 +131,11 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <Home />
+    <div>
+      <Home />
+      <Gallery />
+    </div>
+    
   )
 }
 

@@ -8,10 +8,10 @@ const navbar = {
     position: "absolute !important",
     display: "block !important",
     fontSize: "1.5em",
-    bottom: "20px",
     width: "100%",
     left: "50%",
-    bottom: "20px",
+    bottom: "1em",
+    position: "absolute",
     transform: "translate(-50%, -50%)",
     margin: "0 auto",
     textAlign: "center",
@@ -26,12 +26,10 @@ class Navbar extends React.Component {
     render() {
         return <div>
             <ul style={navbar} >
-                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#work")}>Work</a></li>
-                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#about")}>About</a></li>
+                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#work")}>My Work</a></li>
+                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#about")}>About Me</a></li>
                 {/* <a href="#projects">Projects</a>/ */}
-                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#contact")}>Contact</a></li>
-                <li><Link style={{ color: 'white' }} to="/blog">Blog</Link></li>
-                {/* <li><a href="/blog">Blog</a></li> */}
+                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#contact")}>Reach Out</a></li>
             </ul>
         </div>
     }
