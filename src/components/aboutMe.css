@@ -1,0 +1,53 @@
+.splitScreen > * {
+    flex: 1;
+    max-width: 80%;
+    margin: 2em;
+}
+
+
+.jordanPic img {
+    width: 100%;
+}
+
+.jordanPic {
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border: solid 5px white;
+}
+
+.aboutMeText {
+    margin-top: 0;
+}
+
+.holder {
+    /* Clip edges, as some of the lines don't terminate nicely. */
+    overflow: hidden;
+    position: relative;
+    width: 120%;
+    height: 50px;
+    background: black;
+    overflow: hidden;
+    margin-left: -30px;
+}
+
+.ellipse {
+    position: absolute;
+    background: radial-gradient(ellipse, transparent, transparent 7px, white 7px, white 10px, transparent 11px);
+    background-size: 36px 40px;
+    width: 100%;
+    height: 20px;
+}
+
+.ellipse2 {
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .splitScreen {
+      flex-direction: column;
+    }
+  }

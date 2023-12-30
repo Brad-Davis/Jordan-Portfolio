@@ -40,12 +40,9 @@ class Home extends React.Component {
                     <ContactBar />
                 </div>
                 
-                
-                <button href="javascript:void(0);" onClick={() => scrollTo("#work")} className="btn callToAction">
+                <button href="javascript:void(0);" onClick={() => scrollTo("#gallery")} className="btn callToAction">
                     See My Work <i className="arrow right"></i>
                 </button>
-
-
                 
             </div>
             <Navbar />

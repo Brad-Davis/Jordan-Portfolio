@@ -2,6 +2,8 @@ import * as React from "react"
 import "./style.css"
 import Home from '../components/home';
 import Gallery from "../components/gallery";
+import AboutMe from "../components/aboutMe";
+import ReachOut from "../components/reachOut";
 
 // styles
 const pageStyles = {
@@ -134,6 +136,8 @@ const IndexPage = () => {
     <div>
       <Home />
       <Gallery />
+      <AboutMe />
+      <ReachOut />
     </div>
     
   )

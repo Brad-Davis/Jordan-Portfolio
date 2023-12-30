@@ -19,6 +19,7 @@ const navbar = {
     overflow: "auto",
     clear: "both",
     color: "white",
+    padding: "0px",
 }
 
 
@@ -26,10 +27,10 @@ class Navbar extends React.Component {
     render() {
         return <div>
             <ul style={navbar} >
-                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#work")}>My Work</a></li>
-                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#about")}>About Me</a></li>
+                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#gallery")}>My Work</a></li>
+                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#aboutMe")}>About Me</a></li>
                 {/* <a href="#projects">Projects</a>/ */}
-                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#contact")}>Reach Out</a></li>
+                <li><a style={{ color: 'white' }} href="javascript:void(0);" onClick={() => scrollTo("#reachOut")}>Reach Out</a></li>
             </ul>
         </div>
     }
