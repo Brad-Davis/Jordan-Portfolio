@@ -1,0 +1,7 @@
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    .columnReverse {
+        flex-flow: column-reverse;
+        justify-content: space-evenly !important;
+    }
+}

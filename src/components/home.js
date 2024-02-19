@@ -3,6 +3,7 @@ import React from "react"
 import Navbar from "./navbar.js"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import ContactBar from "./contactBar.js";
+import "./home.css";
 
 function NewlineText(props) {
     const text = props.text;
@@ -18,7 +19,6 @@ const fullBackground = {
     justifyContent: "center",
     backgroundColor: "black",
     justifyContent: "space-around"
-
 }
 
 
@@ -31,7 +31,7 @@ const pageStyles = {
 class Home extends React.Component {
     render() {
         return <div style={{height: "100vh"}}>
-            <div style={fullBackground}>
+            <div className="columnReverse" style={fullBackground}>
 
                 <div>
                     <h1 className="introText">

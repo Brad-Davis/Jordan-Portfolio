@@ -124,6 +124,8 @@ export default function Gallery() {
                                     return (
                                         <li className="photoItem" key={i} onClick={() => showPopUpWithIndex(i)}>
                                             <video
+                                                controls
+                                                webkit-playsinline playsinline
                                                 src={img.src}
                                                 alt={img.alt}
                                                 className={img.type}

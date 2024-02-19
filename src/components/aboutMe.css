@@ -15,6 +15,8 @@
     align-items: end;
     justify-content: center;
     border: solid 5px white;
+    max-height: 600px;
+    max-width: 600px;
 }
 
 .aboutMeText {
@@ -30,6 +32,8 @@
     background: black;
     overflow: hidden;
     margin-left: -30px;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .ellipse {
