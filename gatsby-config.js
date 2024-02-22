@@ -1,7 +1,6 @@
 module.exports = {
-  pathPrefix: '/Jordan-Portfolio',
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://jordanhuynh.art/`,
   },
   plugins: [
   ],
