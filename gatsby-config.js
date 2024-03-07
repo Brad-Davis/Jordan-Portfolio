@@ -1,6 +1,6 @@
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
-    siteUrl: `https://jordanhuynh.art/`,
   },
   plugins: [
   ],

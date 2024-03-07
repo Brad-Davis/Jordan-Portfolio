@@ -4,4 +4,8 @@
         flex-flow: column-reverse;
         justify-content: space-evenly !important;
     }
+
+    .contactHome {
+        padding-bottom: 10vh;
+    }
 }

@@ -33,7 +33,7 @@ class Home extends React.Component {
         return <div style={{height: "100vh"}}>
             <div className="columnReverse" style={fullBackground}>
 
-                <div>
+                <div className="contactHome">
                     <h1 className="introText">
                         Hi I'm Jordan
                     </h1>

@@ -165,6 +165,7 @@ export default function Gallery() {
                     images.map((img, i) => {
                         if (i === photoIndex && (imageType === "all" || imageType == img.type)) {
                             const content = img.type == "motion" ? <video
+                                webkit-playsinline playsinline
                                 src={img.src}
                                 alt={img.alt}
                                 className={img.type}
