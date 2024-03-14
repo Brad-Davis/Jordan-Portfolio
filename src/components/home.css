@@ -1,4 +1,20 @@
 
+.seeMyWork {
+    width: 100%;
+}
+
+.callToAction {
+    max-width: 40%;
+    font-family: Basteleur-Moonlight;
+    background: transparent;
+    color: white;
+    border: 5px solid white;
+}
+
+.callToAction h1 {
+    margin-bottom: 0;
+}
+
 @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
     .columnReverse {
         flex-flow: column-reverse;
@@ -8,4 +24,8 @@
     .contactHome {
         padding-bottom: 10vh;
     }
+    .callToAction {
+        max-width: 80%;
+    }
 }
+

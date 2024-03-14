@@ -3,6 +3,7 @@ import React from "react"
 import Navbar from "./navbar.js"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import ContactBar from "./contactBar.js";
+import seeMyWork from "./images/SEEMYWORK.jpeg";
 import "./home.css";
 
 function NewlineText(props) {
@@ -41,7 +42,8 @@ class Home extends React.Component {
                 </div>
                 
                 <button href="javascript:void(0);" onClick={() => scrollTo("#gallery")} className="btn callToAction">
-                    See My Work <i className="arrow right"></i>
+                    <h1>Click To See My Work</h1>
+                    <img className="seeMyWork" src={seeMyWork}/>
                 </button>
                 
             </div>
