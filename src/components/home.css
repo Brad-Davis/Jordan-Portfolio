@@ -9,6 +9,16 @@
     background: transparent;
     color: white;
     border: 5px solid white;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.callToAction:hover {
+    border: 5px solid gray;
+}
+
+.callToAction:active {
+    border: 2px solid white;
 }
 
 .callToAction h1 {
@@ -22,8 +32,9 @@
     }
 
     .contactHome {
-        padding-bottom: 10vh;
+        padding-bottom: 20vh;
     }
+    
     .callToAction {
         max-width: 80%;
     }

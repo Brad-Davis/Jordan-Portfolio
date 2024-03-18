@@ -10,6 +10,11 @@ html {
     overflow-x: hidden;
 }
 
+:root {
+    color-scheme: dark;
+}
+
+
 @font-face {
     font-family: Basteleur-Moonlight;
     font-weight: 400;
