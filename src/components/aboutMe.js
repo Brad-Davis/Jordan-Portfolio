@@ -1,6 +1,6 @@
 import React from "react"
 import "./aboutMe.css";
-import jordan from './images/jordan.jpeg';
+import jordan from './images/jordan.webp';
 
 export default function AboutMe() {
   return (

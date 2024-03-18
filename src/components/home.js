@@ -3,7 +3,7 @@ import React from "react"
 import Navbar from "./navbar.js"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import ContactBar from "./contactBar.js";
-import seeMyWork from "./images/SEEMYWORK.jpeg";
+import seeMyWork from "./images/SEEMYWORK.webp";
 import "./home.css";
 
 function NewlineText(props) {

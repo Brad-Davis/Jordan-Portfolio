@@ -26,7 +26,7 @@ import nameVideo from "./images/nameVideo.mp4"
 import trippy from "./images/trippy.mp4"
 import watchingWords from "./images/watchingWords.mp4"
 import openWide from "./images/openWide.webp";
-import kingJames from "./images/kjmm.jpg";
+import kingJames from "./images/kjmm.webp";
 
 export default function Gallery() {
     const images = [{ src: kingJames, alt: "", className: "", title: "King James & His Mullberry Album Cover", date: "2023", description: "Album cover created for a local punk band.", type: "design" },
