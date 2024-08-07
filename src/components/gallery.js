@@ -27,12 +27,18 @@ import trippy from "./images/trippy.mp4"
 import watchingWords from "./images/watchingWords.mp4"
 import openWide from "./images/openWide.webp";
 import kingJames from "./images/kjmm.webp";
+import nfgBlockParty from "./images/nfgBlockParty.png";
+import radioEditPoster from "./images/radioEditPoster.png";
+import internetFriendsPoster from "./images/internetFriendsPoster.png";
 
 export default function Gallery() {
-    const images = [{ src: kingJames, alt: "", className: "", title: "King James & His Mullberry Album Cover", date: "2023", description: "Album cover created for a local punk band.", type: "design" },
+    const images = [
+        { src: internetFriendsPoster, alt: "", className: "", title: "Internet Friends EP Release Party AD", date: "2024", description: "Poster created for a client's party/concert.", type: "design" },
+        { src: nfgBlockParty, alt: "", className: "", title: "N.F.G. Block Party Poster", date: "2024", description: "Poster created for a local band.", type: "design" },
+        { src: radioEditPoster, alt: "", className: "", title: "Radio Edit Concert Poster", date: "2023", description: "Poster created for a client's event.", type: "design" },
+        { src: kingJames, alt: "", className: "", title: "King James & His Mullberry Album Cover", date: "2023", description: "Album cover created for a local punk band.", type: "design" },
     { src: noise, alt: "", className: "", title: "Noise Between Static Album Cover", date: "2021", description: "Freelance album cover created for artist Bradley CD.", type: "design" }, 
     { src: final, alt: "", className: "", type: "design",  title: "The Final Broadcast Single Artwork", date: "2021", description: "Freelance single artwork created for artist Bradley CD.", type: "design" },
-    { src: buffoonType, alt: "", className: "", title: "Buffoonery Type", date: "2018", description: "Custom typeface created for typographic investigations.", type: "design" },
     { src: arms, alt: "", className: "", date:'2019', title: 'Intaglio Prints pt. 1', type: "illustration" },
     { src: twisty, alt: "", className: "", title: "Intaglio Prints pt. 2", date: "2019", description: "", type: "illustration"  },
     { src: bordaux, alt: "", className: "",title: "Bordeaux", type: "design", date: "2019", description: "Product design concept for fancy chocolate brand." }, { src: covid, alt: "", className: "", title: "Subway", date: "2020", type: "illustration"},
@@ -49,7 +55,8 @@ export default function Gallery() {
     { src: telephone, alt: "", className: "", title: "The Bald Face Chace", date: "2018", description: "", type: "illustration"  },
     { src: wallpaper, alt: "", className: "", title: "Dragon Wallpaper", date: "2021", description: "", type: "illustration"  },
     { src: whereAreYou, alt: "", className: "", title: "Where You At?", date: "2017", description: "", type: "illustration"  },
-    { src: woodDevil, alt: "", className: "", title: "Welcome", date: "2019", description: "", type: "illustration"  },
+    { src: woodDevil, alt: "", className: "", title: "Welcome", date: "2019", description: "", type: "illustration"  }, 
+    { src: buffoonType, alt: "", className: "", title: "Buffoonery Type", date: "2018", description: "Custom typeface created for typographic investigations.", type: "design" },
     { src: eyeCandy, alt: "", className: "", title: "Eye Candy", date: "2019", description: "", type: "motion" },
     { src: nameVideo, alt: "", className: "", title: "The Name Game", date: "2020", description: "", type: "motion" },
     { src: trippy, alt: "", className: "", title: "Abstract Loop", date: "2019", description: "", type: "motion" },
@@ -80,6 +87,23 @@ export default function Gallery() {
     const openImage = () => {
 
     }
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'ArrowRight') {
+                nextImg();
+            } else if (event.key === 'ArrowLeft') {
+                prevImg();
+            }
+        };
+    
+        document.addEventListener('keydown', handleKeyDown);
+    
+        return () => {
+            // Cleanup the event listener on component unmount
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [photoIndex]); // Re-run the effect when `photoIndex` changes
 
     const showPopUpWithIndex = (index) => {
         setPhotoIndex(index);
